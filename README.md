@@ -64,6 +64,7 @@ resource "aws_ecr_repository" "aws-ecs-simple-repository" {
 }
 ```
 
+```text
 So, use the following tag names:
 - Name: <prefix>-<env>-<name-of-the-mofule>
 - Environment: <prefix>-<env>
@@ -76,4 +77,4 @@ This way we can easily find resources using these tags. E.g:
 - Env="dev" => all demonstrations that have been deployed to "dev" environment
 - Environment="aws-ecs-simple-demo-dev" => aws-ecs-simple-demo in dev environment.
 - Prefix="aws-ecs-simple" => aws-ecs-simple-dev, aws-ecs-simple-qa, aws-ecs-simple-prod...
-
+```
