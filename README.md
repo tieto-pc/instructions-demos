@@ -3,14 +3,13 @@
 
 # Table of Contents  <!-- omit in toc -->
 - [Introduction](#introduction)
+- [Repository Naming](#repository-naming)
 - [Consistent Tagging of Resources](#consistent-tagging-of-resources)
 
 
 # Introduction
 
-The demonstrations are divided regarding public cloud providers: aws and azure (possibly later also gcp).
-
-Demonstrations are also divided to short demonstrations and medium size demonstrations. Certain bigger demonstrations are hosted by a dedicated repostory.
+The demonstrations are divided regarding public cloud providers: [aws](https://aws.amazon.com/), [azure](https://azure.microsoft.com) and [gcp](https://cloud.google.com/).
 
 You can use the demos as a quick ramp-up for your project's own infrastructure code.
 
@@ -20,12 +19,13 @@ Tieto / Application Services / Public Cloud also provides consultation for our p
 
 You can read also our Cloud Mentor's cloud related blog articles in [Medium Publication](https://medium.com/@kari.marttila).
 
+# Repository Naming
+
+Name the repositories like '<cloud-provider>-<descriptive-name>-demo. E.g. 'aws-ecs-fargate-demo' (cloud-provider=aws, descriptive-name=ecs-fargate), i.e. the demo is for the AWS cloud and demonstrates how to use ECS service with Fargate.
 
 # Consistent Tagging of Resources
 
 In all demonstrations use consistent tagging of resources.
-
-
 
 ```terraform
 # Environment parameters (e.g. env.tf)
@@ -63,7 +63,6 @@ resource "aws_ecr_repository" "aws-ecs-simple-repository" {
   }
 }
 ```
-
 
 So, use the following tag names:
 
